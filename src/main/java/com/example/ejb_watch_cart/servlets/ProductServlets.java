@@ -12,14 +12,6 @@ import java.io.IOException;
 
 
 public class ProductServlets {
-    @WebServlet("/")
-    public static class HomepageServlet extends HttpServlet {
-        @Override
-        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            resp.sendRedirect("/products");
-        }
-    }
-    
     @WebServlet("/products")
     public static class ListProductServlet extends HttpServlet {
         @EJB
