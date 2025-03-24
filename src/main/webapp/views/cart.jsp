@@ -52,6 +52,12 @@
                                           type="currency"
                                           currencyCode="VND"
                                           groupingUsed="true"/></td>
+                    <td>
+                        <form action="<c:url value="/cart/remove"/>" method="post">
+                            <input type="hidden" name="productId" value="${cartItem.product.id}">
+                            <button class="btn btn-link">Xóa</button>
+                        </form>
+                    </td>
                 </tr>
             </c:forEach>
             </tbody>
